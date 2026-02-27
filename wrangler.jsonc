@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  "name": "chiangmaigymkhana",
+  "compatibility_date": "2026-02-26",
+
+  "assets": {
+    "directory": "./"
+  }
+}
