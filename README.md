@@ -4,7 +4,7 @@ A modern, responsive website for the historic Chiang Mai Gymkhana Club—a premi
 
 ## Features
 
-- **Golf Course**: Championship 18-hole parkland golf course with pro shop and instruction
+- **Golf Course**: Championship 9-hole parkland golf course with pro shop and instruction
 - **Tennis**: Professional courts with coaching programs and regular championships
 - **Cricket**: Premier cricket grounds with regional tournaments and youth development
 - **Dining & Events**: Restaurant, bar, and event spaces for celebrations and private occasions
