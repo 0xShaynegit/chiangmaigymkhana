@@ -1,4 +1,11 @@
+# Chiang Mai Gymkhana Club - Search Engine Crawler Directives
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
 
+# Crawl delay (optional - adjust if server load is an issue)
+Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://chiangmaigymkhana.com/sitemap.xml
