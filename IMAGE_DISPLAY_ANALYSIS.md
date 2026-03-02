@@ -20,7 +20,7 @@
 - **Desktop Grid:** `grid-template-columns: 1fr 1fr` with `gap: 2rem` (spacing-2xl)
 - **Image Container:** `.split-image` - takes 50% of container width
 - **Max Container Width:** 1200px
-- **Actual Display Width at Desktop:** ~(1200px - 4rem padding - 2rem gap) / 2 = ~588px
+- **Actual Display Width at Desktop:** Approximately 588px (1200px container - padding - gap divided by 2 columns)
 - **Responsive Breakpoint:** 768px and below = single column (full width)
 
 ### Gallery Sections
@@ -41,19 +41,25 @@
 ## Lighthouse-Flagged Images Analysis
 
 ### 1. four-golfers-wide-course-background.webp
-**Original Size:** 1536 × 1536 px
-**Location:** index.html, gallery section (gallery-grid)
-**Context:** `.gallery-item img` in gallery grid
+**Original Size:** 2048 × 1536 px (aspect ratio 1.33:1)
+**Location:** index.html, golf section (split-content, not gallery)
+**Context:** `.split-image img` in split-content layout
+**Note:** This is the wide-version (2048×1536) used in homepage golf section, not the four-golfers-group-photo-mixed.webp
+**Lighthouse Flag:** This image is flagged by Lighthouse audit
 
 **Display Analysis:**
-- Desktop (1200px): ~4 items = 300px × 300px each (aspect ratio 1:1)
-- Tablet (768px): ~2 items = ~375px × 375px each
-- Mobile (480px): 1 item = ~100% of viewport width (with padding) = ~448px × 448px
+- Desktop: ~50% of 1200px container = ~588px width
+  - Aspect: 2048:1536 = 1.33:1
+  - Display: 588px × 441px
+- Tablet (768px): 100% width = ~736px width
+  - Display: 736px × 552px
+- Mobile (480px): 100% width with padding
+  - Display: ~448px × 336px
 
 **Recommended Responsive Variants:**
-- 300px × 300px (desktop gallery)
-- 375px × 375px (tablet gallery)
-- 448px × 448px (mobile gallery)
+- 588px × 441px (desktop)
+- 736px × 552px (tablet)
+- 448px × 336px (mobile)
 
 ---
 
@@ -100,22 +106,24 @@
 ---
 
 ### 4. golf-driver-clubhead-ball-on-tee.webp
-**Original Size:** 1280 × 1280 px
-**Location:** index.html, gallery section
-**Context:** `.gallery-item img` with aspect-ratio: 1
+**Original Size:** 1920 × 1280 px (aspect ratio 1.5:1)
+**Location:** index.html, golf section (split-content)
+**Context:** `.split-image img` in split-content layout
+**Lighthouse Flag:** This image is flagged by Lighthouse audit
 
 **Display Analysis:**
-- Desktop (1200px): Gallery with ~4 columns
-  - Display: 300px × 300px
-- Tablet (768px): Gallery with ~2 columns
-  - Display: 375px × 375px
-- Mobile (480px): Single column
-  - Display: 448px × 448px
+- Desktop: ~50% of 1200px container = ~588px width
+  - Aspect: 1920:1280 = 1.5:1
+  - Display: 588px × 392px
+- Tablet (768px): 100% width = ~736px width
+  - Display: 736px × 491px
+- Mobile (480px): 100% width with padding
+  - Display: ~448px × 299px
 
 **Recommended Responsive Variants:**
-- 300px × 300px (desktop gallery)
-- 375px × 375px (tablet gallery)
-- 448px × 448px (mobile gallery)
+- 588px × 392px (desktop)
+- 736px × 491px (tablet)
+- 448px × 299px (mobile)
 
 ---
 
@@ -141,21 +149,24 @@
 ---
 
 ### 6. historical-1900s-colonial-veranda-photo.webp
-**Original Size:** Not specified in task (needs measurement)
+**Original Size:** 510 × 295 px (aspect ratio 1.73:1)
 **Location:** index.html & about.html, split sections
 **Context:** `.split-image img` in split-content layout
+**Lighthouse Flag:** This image is flagged by Lighthouse audit
 
 **Display Analysis:**
-(Same as other split-section images)
-- Desktop: ~588px width
-- Tablet: ~736px width
-- Mobile: ~448px width
-- Aspect ratio determines height (auto)
+- Desktop: ~50% of 1200px container = ~588px width
+  - Aspect: 510:295 = 1.73:1
+  - Display: 588px × 340px
+- Tablet (768px): 100% width = ~736px width
+  - Display: 736px × 426px
+- Mobile (480px): 100% width with padding
+  - Display: ~448px × 259px
 
 **Recommended Responsive Variants:**
-- 588px width (desktop)
-- 736px width (tablet)
-- 448px width (mobile)
+- 588px × 340px (desktop)
+- 736px × 426px (tablet)
+- 448px × 259px (mobile)
 
 ---
 
@@ -207,8 +218,8 @@ For hero (background images):
 - CSS: `height: 50px; width: 50px; object-fit: contain`
 
 **Recommended Responsive Variants:**
-- 50px × 50px (all sizes - logo remains constant)
-- Or provide 100px × 100px variant for potential 2x display on high-DPI screens
+- 50px × 50px (all sizes - logo standard display)
+- PLUS generate 100px × 100px variant for high-DPI (2x) displays
 
 ---
 
