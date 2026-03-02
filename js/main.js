@@ -16,8 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+});
 
-    // Initialize Lightbox for all images
+// Initialize GLightbox after page load for deferred loading
+window.addEventListener('load', function() {
     if (typeof GLightbox !== 'undefined') {
         const lightbox = GLightbox({
             selector: '[data-glightbox]',
