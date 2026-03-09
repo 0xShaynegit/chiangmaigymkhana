@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Chiang Mai Gymkhana Club</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f1e8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2d5016;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header a {
+            color: #f5f1e8;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        header a:hover {
+            color: #d4a574;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .error-section {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 1rem;
+        }
+
+        .error-content {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-size: 5rem;
+            font-weight: bold;
+            color: #c9682f;
+            margin-bottom: 0.5rem;
+            font-family: Georgia, serif;
+        }
+
+        .error-title {
+            font-size: 2rem;
+            color: #2d5016;
+            margin-bottom: 1rem;
+            font-family: Georgia, serif;
+        }
+
+        .error-message {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .nav-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            border: 2px solid #2d5016;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #2d5016;
+            color: #f5f1e8;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            background-color: #c9682f;
+        }
+
+        .home-link {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #c9682f;
+            color: #f5f1e8;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+
+        .home-link:hover {
+            background-color: #2d5016;
+        }
+
+        footer {
+            background-color: #2d5016;
+            color: #f5f1e8;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #d4a574;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/">Chiang Mai Gymkhana Club</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="error-section">
+            <div class="container">
+                <div class="error-content">
+                    <div class="error-code">404</div>
+                    <h1 class="error-title">Page Not Found</h1>
+                    <p class="error-message">
+                        We couldn't find the page you're looking for. It may have been moved or deleted.
+                    </p>
+
+                    <div class="nav-links">
+                        <a href="/">Home</a>
+                        <a href="/pages/golf.html">Golf</a>
+                        <a href="/pages/tennis.html">Tennis</a>
+                        <a href="/pages/cricket.html">Cricket</a>
+                        <a href="/pages/restaurant.html">Dining</a>
+                        <a href="/pages/about.html">About</a>
+                    </div>
+
+                    <a href="/" class="home-link">Return to Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chiang Mai Gymkhana Club. All rights reserved.</p>
+            <p><a href="https://m.me/chiangmai.gymkhana">Message us on Facebook</a></p>
+        </div>
+    </footer>
+</body>
+</html>
