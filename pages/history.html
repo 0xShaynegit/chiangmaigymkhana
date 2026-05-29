@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Since 1898 | Chiang Mai Gymkhana Club</title>
+    <meta name="description" content="From jungle isolation to colonial heyday, WWII occupation to cricket revival. The full story of the oldest sports club in northern Thailand, founded April 5, 1898.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://chiangmaigymkhana.com/pages/history.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="History Since 1898 | Chiang Mai Gymkhana Club">
+    <meta property="og:description" content="From jungle isolation to colonial heyday, WWII occupation to cricket revival. The full story of the oldest sports club in northern Thailand.">
+    <meta property="og:image" content="https://chiangmaigymkhana.com/images/chiang-mai-gymkhana-chiangmaigymkhana-group-photo-of-teak-foresters-in-front-of-Chiang-Mai-Gymkhana-club-in-1901.webp">
+    <meta property="og:url" content="https://chiangmaigymkhana.com/pages/history.html">
+
+    <link rel="icon" type="image/webp" href="../images/chiang-mai-gymkhana-chiangmaigymkhana-club-logo-1898-transparent-32.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: #1a1a1a;
+            background: #f2ede6;
+            line-height: 1.5;
+            animation: pageFadeIn 0.6s ease forwards;
+        }
+
+        h1, h2, h3, blockquote {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        @keyframes pageFadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        /* NAV */
+        header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            padding: 1.4rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.4s, box-shadow 0.4s;
+        }
+
+        header.scrolled {
+            background: rgba(255,255,255,0.97);
+            box-shadow: 0 1px 0 #efefef;
+        }
+
+        .logo { display: flex; flex-direction: row; align-items: center; gap: 10px; }
+        .logo-text { display: flex; flex-direction: column; gap: 2px; }
+        .logo-name {
+            font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em;
+            color: white; transition: color 0.4s; line-height: 1; text-decoration: none;
+        }
+        .logo-est {
+            font-size: 0.62rem; font-weight: 400; letter-spacing: 0.18em;
+            color: rgba(255,255,255,0.6); transition: color 0.4s; line-height: 1;
+        }
+        header.scrolled .logo-name { color: #1a1a1a; }
+        header.scrolled .logo-est { color: #999; }
+
+        nav { display: flex; gap: 2.5rem; align-items: center; }
+        nav a {
+            color: rgba(255,255,255,0.85); text-decoration: none;
+            font-size: 0.78rem; font-weight: 500; letter-spacing: 0.04em;
+            transition: color 0.4s, opacity 0.3s;
+        }
+        header.scrolled nav a { color: #1a1a1a; }
+        nav a:hover { opacity: 0.55; }
+        nav a.active { color: white; border-bottom: 1.5px solid rgba(255,255,255,0.6); padding-bottom: 2px; }
+        header.scrolled nav a.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
+        .nav-cta {
+            background: white; color: #1a1a1a !important;
+            padding: 0.5rem 1.2rem; font-weight: 600; font-size: 0.72rem; letter-spacing: 0.06em;
+        }
+        header.scrolled .nav-cta { background: #1a1a1a; color: white !important; }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            height: 100vh; min-height: 600px;
+            display: flex; align-items: flex-end;
+            background: url('../images/chiang-mai-gymkhana-chiangmaigymkhana-group-photo-of-teak-foresters-in-front-of-Chiang-Mai-Gymkhana-club-in-1901.webp') center/cover no-repeat;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 30%, transparent 40%, rgba(15,13,10,0.78) 100%);
+        }
+        .hero-content { position: relative; z-index: 2; padding: 0 4rem 6rem; width: 100%; }
+        .hero-label {
+            font-size: 0.7rem; font-weight: 600; letter-spacing: 0.2em;
+            text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 1.2rem;
+        }
+        .hero h1 {
+            font-size: clamp(3rem, 6.5vw, 6rem); font-weight: 700;
+            line-height: 1.0; letter-spacing: -0.04em; color: white;
+            margin-bottom: 1.2rem; max-width: 700px;
+        }
+        .hero-subtitle {
+            font-size: clamp(1rem, 1.8vw, 1.3rem); font-weight: 300;
+            line-height: 1.6; color: rgba(255,255,255,0.8); max-width: 580px;
+        }
+
+        /* ANCHOR NAV */
+        .anchor-nav {
+            background: #2d5016;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 900;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: none;
+        }
+        .anchor-nav::-webkit-scrollbar { display: none; }
+        .anchor-nav-inner {
+            display: flex;
+            padding: 0 3rem;
+        }
+        .anchor-nav a {
+            display: inline-block;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 1rem 1.2rem;
+            transition: color 0.2s, border-bottom 0.2s;
+            border-bottom: 2px solid transparent;
+        }
+        .anchor-nav a:hover {
+            color: white;
+            border-bottom-color: rgba(255,255,255,0.4);
+        }
+
+        /* SECTION BASE */
+        .history-section {
+            padding: 8rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            font-size: 0.68rem; font-weight: 700; letter-spacing: 0.22em;
+            text-transform: uppercase; color: #c9682f;
+            margin-bottom: 1rem;
+        }
+
+        .history-section h2 {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            font-weight: 700; line-height: 1.1;
+            letter-spacing: -0.03em; color: #1a1a1a;
+            margin-bottom: 2rem;
+        }
+
+        .history-section h3 {
+            font-size: 1.3rem; font-weight: 700;
+            color: #2d5016; margin: 2.5rem 0 0.8rem;
+        }
+
+        .history-section p {
+            font-size: 1.05rem; line-height: 1.8;
+            color: #3a3a3a; margin-bottom: 1.4rem;
+            max-width: 740px;
+        }
+
+        /* SPLIT LAYOUT */
+        .split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: start;
+            padding: 8rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .split.reverse { direction: rtl; }
+        .split.reverse > * { direction: ltr; }
+
+        .split-text h2 {
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+            font-weight: 700; line-height: 1.1;
+            letter-spacing: -0.03em; color: #1a1a1a;
+            margin-bottom: 1.5rem;
+        }
+
+        .split-text h3 {
+            font-size: 1.15rem; font-weight: 700;
+            color: #2d5016; margin: 2rem 0 0.6rem;
+        }
+
+        .split-text p {
+            font-size: 1rem; line-height: 1.8;
+            color: #3a3a3a; margin-bottom: 1.2rem;
+        }
+
+        .split-image img {
+            width: 100%; aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        .split-image figcaption {
+            font-size: 0.72rem; color: #999;
+            margin-top: 0.6rem; letter-spacing: 0.04em;
+        }
+
+        /* FULL-WIDTH IMAGE */
+        .full-image {
+            width: 100%; max-height: 520px;
+            object-fit: cover; display: block;
+        }
+
+        /* PULL QUOTE */
+        .pull-quote {
+            border-left: 4px solid #c9682f;
+            margin: 3rem 0;
+            padding: 1.5rem 2.5rem;
+            background: white;
+        }
+
+        .pull-quote blockquote {
+            font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+            font-weight: 400; line-height: 1.5;
+            color: #1a1a1a; font-style: italic;
+            margin-bottom: 0.8rem;
+        }
+
+        .pull-quote cite {
+            font-size: 0.78rem; font-weight: 600;
+            letter-spacing: 0.1em; text-transform: uppercase;
+            color: #c9682f; font-style: normal;
+        }
+
+        /* CALLOUT / FACT BOX */
+        .fact-box {
+            background: #2d5016;
+            padding: 2.5rem 3rem;
+            margin: 3rem 0;
+            max-width: 740px;
+        }
+
+        .fact-box h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.15rem; color: white;
+            margin-bottom: 0.8rem;
+        }
+
+        .fact-box p {
+            font-size: 0.95rem; line-height: 1.7;
+            color: rgba(255,255,255,0.85); margin-bottom: 0;
+        }
+
+        /* IMAGE GRID */
+        .image-grid {
+            display: grid;
+            gap: 1rem;
+            padding: 0 4rem 6rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .image-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+        .image-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+        .image-grid img {
+            width: 100%; aspect-ratio: 3/2;
+            object-fit: cover; display: block;
+        }
+
+        .image-grid figcaption {
+            font-size: 0.7rem; color: #999;
+            margin-top: 0.4rem;
+        }
+
+        /* FOUNDERS LIST */
+        .founders-list {
+            list-style: none;
+            margin: 1.5rem 0 2rem;
+            max-width: 600px;
+        }
+
+        .founders-list li {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #e0d9ce;
+            font-size: 0.95rem; color: #3a3a3a;
+            line-height: 1.5;
+        }
+
+        .founders-list li:last-child { border-bottom: none; }
+        .founders-list strong { color: #2d5016; }
+
+        /* DIVIDER */
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #c8bfb0, transparent);
+            margin: 0 4rem;
+        }
+
+        /* DARK SECTION */
+        .dark-section {
+            background: #1a1a1a;
+            padding: 8rem 4rem;
+        }
+
+        .dark-section-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .dark-section .section-label { color: #c9682f; }
+
+        .dark-section h2 {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            font-weight: 700; line-height: 1.1;
+            letter-spacing: -0.03em; color: white;
+            margin-bottom: 2rem;
+        }
+
+        .dark-section h3 {
+            font-size: 1.2rem; font-weight: 700;
+            color: #d4a574; margin: 2.5rem 0 0.8rem;
+        }
+
+        .dark-section p {
+            font-size: 1.05rem; line-height: 1.8;
+            color: rgba(255,255,255,0.8); margin-bottom: 1.4rem;
+            max-width: 740px;
+        }
+
+        .dark-section .pull-quote {
+            background: rgba(255,255,255,0.06);
+            border-left-color: #c9682f;
+        }
+
+        .dark-section .pull-quote blockquote { color: white; }
+
+        /* TODAY SECTION */
+        .today-section {
+            background: #2d5016;
+            padding: 8rem 4rem;
+        }
+
+        .today-section-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .today-section .section-label { color: #d4a574; }
+
+        .today-section h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700; line-height: 1.1;
+            letter-spacing: -0.03em; color: white;
+            margin-bottom: 2rem;
+        }
+
+        .today-section p {
+            font-size: 1.05rem; line-height: 1.8;
+            color: rgba(255,255,255,0.85); margin-bottom: 1.4rem;
+        }
+
+        .today-cta {
+            display: inline-block;
+            background: white; color: #2d5016;
+            padding: 1rem 2rem;
+            font-size: 0.8rem; font-weight: 700;
+            letter-spacing: 0.1em; text-transform: uppercase;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .today-cta:hover { background: #d4a574; color: white; }
+
+        /* FOOTER */
+        footer {
+            background: #111;
+            padding: 4rem 4rem 3rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .footer-inner {
+            max-width: 1200px; margin: 0 auto;
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem; padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .footer-brand .logo-name { color: white; font-size: 0.85rem; }
+        .footer-brand .logo-est { color: rgba(255,255,255,0.4); }
+        .footer-brand p {
+            font-size: 0.82rem; line-height: 1.7;
+            color: rgba(255,255,255,0.4); margin-top: 1rem;
+        }
+
+        .footer-col h4 {
+            font-size: 0.68rem; font-weight: 700;
+            letter-spacing: 0.18em; text-transform: uppercase;
+            color: rgba(255,255,255,0.6); margin-bottom: 1.2rem;
+        }
+
+        .footer-col a {
+            display: block; color: rgba(255,255,255,0.4);
+            text-decoration: none; font-size: 0.82rem;
+            line-height: 2; transition: color 0.2s;
+        }
+
+        .footer-col a:hover { color: white; }
+
+        .footer-bottom {
+            max-width: 1200px; margin: 2rem auto 0;
+            font-size: 0.75rem; display: flex;
+            justify-content: space-between; align-items: center;
+        }
+
+        /* HAMBURGER */
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+        .hamburger span { width: 22px; height: 2px; background: white; transition: background 0.4s; display: block; }
+        header.scrolled .hamburger span { background: #1a1a1a; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            header { padding: 1.2rem 1.5rem; }
+            nav { display: none; }
+            nav.open {
+                display: flex; flex-direction: column;
+                position: fixed; inset: 0; background: rgba(0,0,0,0.96);
+                justify-content: center; align-items: center; gap: 2rem; z-index: 999;
+            }
+            nav.open a { font-size: 1.4rem; color: white; }
+            .hamburger { display: flex; z-index: 1001; }
+
+            .hero-content { padding: 0 1.5rem 4rem; }
+            .hero h1 { font-size: clamp(2.2rem, 9vw, 4rem); }
+
+            .anchor-nav-inner { padding: 0 1rem; }
+
+            .history-section { padding: 5rem 1.5rem; }
+            .split { grid-template-columns: 1fr; gap: 2.5rem; padding: 5rem 1.5rem; }
+            .split.reverse { direction: ltr; }
+
+            .image-grid { padding: 0 1.5rem 4rem; }
+            .image-grid.cols-3 { grid-template-columns: 1fr 1fr; }
+
+            .dark-section { padding: 5rem 1.5rem; }
+            .today-section { padding: 5rem 1.5rem; }
+            .today-section-inner { grid-template-columns: 1fr; gap: 3rem; }
+
+            .pull-quote { padding: 1.2rem 1.5rem; }
+            .fact-box { padding: 1.8rem 1.5rem; }
+
+            .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<header id="site-header">
+    <div class="logo">
+        <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-club-logo-1898-transparent-72.webp" alt="Chiang Mai Gymkhana Club" style="height:36px;width:36px;object-fit:contain;">
+        <div class="logo-text">
+            <a href="../index.html" class="logo-name">CHIANG MAI GYMKHANA</a>
+            <span class="logo-est">EST. 1898</span>
+        </div>
+    </div>
+    <nav id="main-nav">
+        <a href="golf.html">Golf</a>
+        <a href="tennis.html">Tennis</a>
+        <a href="cricket.html">Cricket</a>
+        <a href="restaurant.html">Dining</a>
+        <a href="about.html">About</a>
+        <a href="history.html" class="active">History</a>
+        <a href="about.html#contact" class="nav-cta">Visit Us</a>
+    </nav>
+    <div class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <p class="hero-label">Chiang Mai Gymkhana Club</p>
+        <h1>A Club Since 1898</h1>
+        <p class="hero-subtitle">Founded by teak traders and British diplomats in the jungles of northern Siam. The story of the oldest sports club in northern Thailand.</p>
+    </div>
+</section>
+
+<!-- ANCHOR NAV -->
+<nav class="anchor-nav" aria-label="History sections">
+    <div class="anchor-nav-inner">
+        <a href="#founding">The Founding</a>
+        <a href="#teak-wallahs">Teak Wallahs</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#sport-society">Sport and Society</a>
+        <a href="#dark-years">The Dark Years</a>
+        <a href="#sixes">Revival and the Sixes</a>
+        <a href="#today">The Club Today</a>
+    </div>
+</nav>
+
+<!-- SECTION 1: THE FOUNDING -->
+<section id="founding">
+    <div class="history-section">
+        <p class="section-label">April 5, 1898</p>
+        <h2>The Founding</h2>
+        <p>On April 5, 1898, fourteen men gathered in northern Siam to sign a sporting club into existence. They were teak traders, diplomats, and colonial entrepreneurs operating at the very edge of the British Empire. What they built that day has outlasted every company they worked for, every empire they served, and every forest they logged.</p>
+        <p>The land — 90 rai (approximately 15 hectares) of flat ground near the Ping River — was granted by Chao Intawaroros Suriyavongse, the Prince of Chiang Mai, with the formal blessing of King Rama V (Chulalongkorn). The deed was issued for the express purpose of "encouraging sport in Northern Siam." In the same year, King Rama V signed a second royal deed granting 24 rai of adjacent land to the south as a Foreign Cemetery — so that the men who came to play would also have a place to rest.</p>
+
+        <div class="pull-quote">
+            <blockquote>"It was as if the jungle had tried to digest the British Empire in four short years — and failed."</blockquote>
+            <cite>Club annals, post-war restoration, 1946</cite>
+        </div>
+
+        <h3>The Original 14 Founders</h3>
+        <p>The founding members represented the four great teak companies of the north and the British Government:</p>
+
+        <ul class="founders-list">
+            <li><strong>The British Consulate</strong> — Led by W.J. Archer, the club's first President. The Consulate gave the institution its formal British standing.</li>
+            <li><strong>The Borneo Company Limited</strong> — The dominant force in the northern teak trade.</li>
+            <li><strong>The Bombay Burmah Trading Corporation</strong> — Fierce rivals of the Borneo Co., equally powerful in the forests.</li>
+            <li><strong>The Siam Forest Company</strong> — Later known as Anglo-Thai Corporation.</li>
+            <li><strong>The Louis T. Leonowens Company</strong> — Founded by the son of Anna Leonowens, tutor to King Mongkut's children.</li>
+        </ul>
+
+        <p>Of the original fourteen signatories, only one held Thai nationality. Out of the jungle, out of commercial rivalry and political complexity, they built something that would outlast them all.</p>
+
+        <div class="fact-box">
+            <h3>The Old Spelling</h3>
+            <p>You will still see "Chiengmai" on the club's original crest — the 19th-century romanisation of the city's name. It is a deliberate nod to the club's origins, worn with pride on official documents to this day.</p>
+        </div>
+    </div>
+
+    <div class="image-grid cols-3">
+        <figure>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-group-photo-of-teak-foresters-in-front-of-Chiang-Mai-Gymkhana-club-in-1901.webp" alt="Teak foresters group photo in front of Chiang Mai Gymkhana Club, 1901" width="380" height="253" loading="lazy">
+            <figcaption>Teak foresters at the Gymkhana Club, 1901</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-founders-memorial-plaque-1898.webp" alt="Founders memorial plaque 1898" width="380" height="253" loading="lazy">
+            <figcaption>The founders memorial plaque</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-1905-AFG-Kerr.webp" alt="AFG Kerr at Chiang Mai Gymkhana Club, 1905" width="380" height="253" loading="lazy">
+            <figcaption>A.F.G. Kerr at the club, 1905</figcaption>
+        </figure>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SECTION 2: TEAK WALLAHS -->
+<section id="teak-wallahs">
+    <div class="split">
+        <div class="split-text">
+            <p class="section-label">1890 to 1910</p>
+            <h2>The Teak Wallahs Era</h2>
+            <p>The founding of the Gymkhana Club was not vanity. It was a psychological necessity. In the late 1800s, Chiang Mai sat a month-long boat journey from Bangkok. There were no roads, no electricity, no telegraph. The men who worked here — known as the Teak Wallahs — spent nine months of every year deep in the jungle, living in bamboo huts, managing thousands of elephants, and navigating malaria, tiger attacks, and profound isolation.</p>
+            <p>When the monsoon rains made jungle work impossible, the Wallahs descended on Chiang Mai. The Gymkhana was their halfway house. They traded jungle boots for cricket whites. They settled business grudges over billiards. They remembered, briefly, that they were human beings.</p>
+
+            <h3>The Legend of Louis Leonowens</h3>
+            <p>No figure threads through the early Gymkhana story more vividly than Louis Leonowens — son of Anna Leonowens, the Welsh tutor to King Mongkut's children whose story inspired <em>The King and I</em>. Louis grew up in the Thai court and emerged as the most colourful entrepreneur of the northern teak trade. He was a master horseman who imported polo ponies from Burma and Australia, a prodigious drinker, and a founding force behind organised sport in the north. While his mother became a global celebrity through books and films, Louis's legacy is written in the timber and the turf of the Gymkhana.</p>
+
+            <h3>The Economic World Behind the Club</h3>
+            <p>The teak industry that funded the Gymkhana's existence was, by any measure, extraordinary in scale. Thousands of elephants were trained to drag enormous logs from remote highland forests to river systems running south. The logs floated downstream to Bangkok and on to global timber markets. The men who managed this operation worked across vast territories with minimal infrastructure and no outside help. The Gymkhana Club was their one concession to civilisation.</p>
+        </div>
+        <div class="split-image">
+            <figure>
+                <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-1909-visit-of-the-Lawn-Tennis-Club1.webp" alt="Visit of the Lawn Tennis Club to Chiang Mai Gymkhana, 1909" width="560" height="420" loading="lazy">
+                <figcaption>Visit of the Lawn Tennis Club, 1909</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="history-section" style="padding-top: 0;">
+        <div class="pull-quote">
+            <blockquote>"The Gymkhana was the one place in Siam where a man could feel, for a few hours, that the world had not entirely changed."</blockquote>
+            <cite>W. Somerset Maugham, The Gentleman in the Parlour, 1930</cite>
+        </div>
+
+        <h3>Captured in Print</h3>
+        <p>Somerset Maugham passed through Chiang Mai during his 1923 journey across Burma and Siam — the trip that produced <em>The Gentleman in the Parlour</em>. He was a precise observer of colonial malaise. He noted the absurdity and the genuine poignancy of men wearing heavy flannel cricket whites in 40-degree heat, drinking lukewarm gin and tonic while the jungle pressed against the boundary rope. His account gave the Gymkhana an international literary reputation it retains to this day.</p>
+        <p>W.A.R. Wood, who arrived in Thailand in 1896 and served as British Consul in Chiang Mai from 1915 until his retirement in 1931, wrote the most authentic insider account in <em>Consul in Paradise</em> (1965). Wood is buried in the Foreign Cemetery next door. His son Dick followed him as a club member for decades — between father and son, over a century of continuous membership.</p>
+        <p>Reginald Campbell's <em>Teak Wallah</em> (1935) provides the grunt's-eye view: the "Friday Night Dash," the mad trek from jungle camps to the club for a weekend of golf and whiskey, and the complex social hierarchies of men who knew each other's secrets because there was no one else around.</p>
+    </div>
+
+    <div class="image-grid cols-2">
+        <figure>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-1909-visit-of-the-Prince-Son-of-Rama-5.webp" alt="Visit of the Prince, son of Rama V, to Chiang Mai Gymkhana, 1909" width="580" height="387" loading="lazy">
+            <figcaption>Visit of the Prince, son of Rama V, 1909</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-1931-plans.webp" alt="Chiang Mai Gymkhana Club plans, 1931" width="580" height="387" loading="lazy">
+            <figcaption>Club plans, 1931</figcaption>
+        </figure>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SECTION 3: ARCHITECTURE -->
+<section id="architecture">
+    <div class="split reverse">
+        <div class="split-text">
+            <p class="section-label">Built to Last</p>
+            <h2>The Architecture</h2>
+            <p>The Gymkhana Club's physical presence is a masterclass in Colonial-Lanna fusion. Before air conditioning existed, before concrete dominated the tropics, the founders built a structure designed to survive and remain comfortable through centuries of monsoon, heat, and humidity. It succeeded beyond all reasonable expectation.</p>
+
+            <h3>The Clubhouse on Stilts</h3>
+            <p>The original clubhouse was built of solid teak — an obvious choice given the founders' profession. Like traditional Lanna houses, it was raised on heavy timber pillars. This served three purposes: it kept the floor dry during monsoon floods, allowed cool air to circulate underneath, and kept snakes and scorpions at a respectful distance.</p>
+            <p>The wide wrap-around veranda — the soul of the building — allowed members to watch cricket or golf from the shade. Inside, high ceilings and dark teak panelling created a cool interior even in the hottest months. The Honour Boards still line the walls, listing every Club President since 1898: a literal roll call of Chiang Mai's colonial and post-colonial history.</p>
+
+            <h3>The Giant Rain Tree</h3>
+            <p>The Rain Tree (Samanea saman) that dominates the club grounds is not merely a tree. It is a monument. Its canopy spreads over an enormous area — one of the largest and most photographed trees in Thailand — providing a natural pavilion for hundreds of spectators during the Cricket Sixes. Rain trees were introduced to Southeast Asia from Central and South America in the late 19th century. This tree was likely planted at the club's inception, making it a living twin to the institution itself, now believed to be over 125 years old.</p>
+            <p>Legend holds that the first meetings to discuss the club's formation were held in the shade of this tree before the clubhouse was even built.</p>
+        </div>
+        <div class="split-image">
+            <figure>
+                <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-1966-old-clubhouse.webp" alt="Chiang Mai Gymkhana Club old clubhouse, 1966" width="560" height="420" loading="lazy">
+                <figcaption>The old clubhouse, 1966</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="history-section" style="padding-top: 0;">
+        <h3>The Golf Course</h3>
+        <p>The Gymkhana hosts a 9-hole par-36 layout widely regarded as the first golf course in northern Thailand. Its design is "idiosyncratic" — and deliberately so. When the grounds were originally laid out, polo, cricket, and golf were intended to operate simultaneously across the same land. The result is a course that defies modern golfing logic: non-linear, full of centuries-old trees as hazards, and historically maintained by grazing cattle rather than chemical mowing. Locals call it "The Gym." It plays harder than it looks.</p>
+
+        <div class="fact-box">
+            <h3>Preserved, Not Renovated</h3>
+            <p>What makes the Gymkhana's architecture genuinely remarkable is what has not happened to it. Colonial clubs across Asia have been gutted and reborn as luxury hotels or glass-and-steel facilities. The Gymkhana still has creaking floorboards, the smell of old teak and cut grass, and a bar where a 1920s teak trader would feel immediately at home. This is not an accident. It is a choice.</p>
+        </div>
+    </div>
+
+    <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-giant-rain-tree-wide-canopy.webp" alt="Giant rain tree at Chiang Mai Gymkhana Club with wide canopy" class="full-image" width="1200" height="520" loading="lazy">
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SECTION 4: SPORT AND SOCIETY -->
+<section id="sport-society">
+    <div class="history-section">
+        <p class="section-label">Golf, Cricket, Tennis and Squash</p>
+        <h2>Sport and Society</h2>
+        <p>Sport at the Gymkhana was never just recreation. In the isolation of northern Siam, organised competition was social infrastructure. It created structure, hierarchy, and community for men who had nothing else in common except their profession and their distance from home.</p>
+
+        <h3>Golf: The Founding Game</h3>
+        <p>Golf was established at the Gymkhana from its earliest years. The course — flat, multi-use, historically mowed by cattle — is the oldest in northern Thailand and remains in active play today. It has hosted generations of members, visiting diplomats, and the occasional Test cricketer who fancied a round between innings.</p>
+
+        <h3>Cricket: From Pastime to Institution</h3>
+        <p>Cricket arrived with the British founders and never left. The flat ground near the Ping River that made the original site attractive was also perfect for a cricket pitch. The game became central to the Gymkhana's identity in a way that would, nearly a century later, save the club from decline entirely.</p>
+
+        <h3>Tennis: Since 1909</h3>
+        <p>The 1909 photograph of the Lawn Tennis Club's visit to the Gymkhana documents organised tennis on these grounds over 115 years ago. The sport has been continuous ever since, with the current courts maintained to a standard that attracts competitive players from across the region.</p>
+
+        <h3>Squash: Thailand's First Court</h3>
+        <p>Perhaps the most overlooked chapter in the Gymkhana's sporting history is squash. According to historian Duncan Stearn's research for <em>The Birth and Growth of Squash</em>, the Chiang Mai Gymkhana Club housed Thailand's first squash court — built entirely of teak, erected around the time of the club's founding in 1898. The court predated Bangkok's Royal Bangkok Sports Club facility by 13 years.</p>
+        <p>David Macfie, a founding member of the Gymkhana, took squash further still. In 1910, he sponsored the first organised squash competition in Thailand — the Chiang Mai Challenge Cup, held at the Royal Bangkok Sports Club. That competition has been held continuously ever since and is considered one of the oldest squash competitions in the world. The teak squash court served the club for approximately 90 years before its demolition in 1985. The legacy it left in Thailand's sporting history is considerably more durable.</p>
+
+        <div class="pull-quote">
+            <blockquote>"Between father and son, they represented over a century of continuous membership — the most eloquent statement the Gymkhana ever made about belonging."</blockquote>
+            <cite>On W.A.R. Wood and his son Dick Wood, club records</cite>
+        </div>
+    </div>
+
+    <div class="image-grid cols-3">
+        <figure>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-squash-court-two-players.webp" alt="Two players on Gymkhana squash court" width="380" height="253" loading="lazy">
+            <figcaption>Squash at the Gymkhana</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-club-crest-wooden-shield-1898.webp" alt="Chiang Mai Gymkhana Club crest wooden shield 1898" width="380" height="253" loading="lazy">
+            <figcaption>The original club crest, 1898</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-founder-members-marble-plaque.webp" alt="Founder members marble plaque" width="380" height="253" loading="lazy">
+            <figcaption>Founder members plaque</figcaption>
+        </figure>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SECTION 5: THE DARK YEARS -->
+<section id="dark-years" class="dark-section">
+    <div class="dark-section-inner">
+        <p class="section-label">1941 to 1946</p>
+        <h2>The Dark Years</h2>
+        <p>The Gymkhana's history divides cleanly at December 8, 1941. Before that date, the club was a functioning colonial institution. After it, the club was a military barracks, and its members were either enemy aliens or fugitives.</p>
+
+        <h3>The Invasion</h3>
+        <p>When the Japanese Imperial Army entered Thailand on December 8, 1941 — almost simultaneous with the attack on Pearl Harbour — the lives of the Gymkhana's British and Australian members changed overnight. Thailand, under Field Marshal Plaek Phibunsongkhram, signed an alliance with Japan within hours. British and Australian nationals became enemy aliens. The colonial world that had sustained the Gymkhana for 43 years ceased to exist between one sunset and the next.</p>
+
+        <h3>The "Walkout" and the Internment</h3>
+        <p>Many of the younger teak managers did not wait to be captured. They packed what they could carry and undertook harrowing overland treks through jungle and across mountain ranges into Burma. Those who stayed — the elderly, those with deep ties to the Thai community, those who believed their long residency might protect them — were rounded up. They were held initially in Chiang Mai before transfer to internment camps in Bangkok.</p>
+        <p>W.A.R. Wood, the legendary British Consul, was among those who managed to remain relatively safe. His immense standing in the Thai community and his Thai wife provided some protection, though his official powers were stripped. His grave in the Foreign Cemetery next door tells the rest of the story.</p>
+
+        <h3>The Club as Garrison</h3>
+        <p>The Gymkhana grounds were seized for military use. The Thai military was billeted at the club. The flat cricket and polo fields were ideal for drilling troops and parking vehicles. The clubhouse that had hosted black-tie dinners was used as an officers' mess. Much of the original teak furniture was broken or repurposed. The golf course, left without maintenance through years of monsoon rains, was reclaimed by the jungle.</p>
+        <p>Next door in the Foreign Cemetery, rumours that the rich foreigners had buried gold and jewellery in coffins spread among soldiers and opportunists. Tombs were broken open and headstones smashed in a futile search for treasure that did not exist. The desecration of the cemetery was among the first things the returning community set about repairing.</p>
+
+        <div class="pull-quote">
+            <blockquote>"The fairways were waist-high in elephant grass, and the Long Bar was a shell of its former self. It was as if the jungle had tried to digest the British Empire in four short years."</blockquote>
+            <cite>Club annals, 1946</cite>
+        </div>
+
+        <h3>The 1946 Resurrection</h3>
+        <p>When the war ended, the returning members found a club that was barely recognisable. A dedicated group of survivors and newly arrived expatriates spent the late 1940s literally hacking the club back into existence. The restoration was made possible in large part by the Thai elite of Chiang Mai, who helped facilitate the return of the land and provided the labour and resources to rebuild. The Gymkhana's survival after 1946 is as much a Thai story as a British one.</p>
+    </div>
+
+    <div class="image-grid cols-2" style="padding-top: 4rem;">
+        <figure>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-Old-Gymkhana-Clubhouse-January-1-1938---credit-Oliver-Backhouse-and-Frans-Betgem.webp" alt="Old Gymkhana Clubhouse, January 1938 - credit Oliver Backhouse and Frans Betgem" width="580" height="387" loading="lazy">
+            <figcaption>The old clubhouse, January 1938. Credit: Oliver Backhouse and Frans Betgem.</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-Rugby-at-Gymkhana-1960s.webp" alt="Rugby at Chiang Mai Gymkhana Club, 1960s" width="580" height="387" loading="lazy">
+            <figcaption>Rugby at the Gymkhana, 1960s</figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- SECTION 6: REVIVAL AND THE SIXES -->
+<section id="sixes">
+    <div class="history-section">
+        <p class="section-label">1988 and Beyond</p>
+        <h2>Revival and the Sixes</h2>
+        <p>The Gymkhana survived the war. It did not immediately thrive. Through the 1970s and into the 1980s, membership dwindled as the old teak families died out and the colonial world that had sustained the club for nearly a century dissolved entirely. By the mid-1980s, the club faced a quiet existential crisis: too much history, not enough future.</p>
+        <p>What saved it was cricket.</p>
+
+        <h3>The Birth of the Sixes, 1988</h3>
+        <p>The Chiang Mai International Cricket Sixes was founded in 1988. The format was deliberately accessible: six players per side, five overs per innings, fast, entertaining, and open to amateur teams from around the world. It worked beyond all expectation. Teams from Australia, the UK, Hong Kong, South Africa, and across Asia began arriving annually. The Gymkhana transformed from a sleepy colonial relic into one of the most celebrated amateur cricket events on the international calendar — described by participants as the largest and best amateur cricket tournament in the world.</p>
+        <p>The Sixes brought in a new generation of expatriates: the retired executives, international travellers, and digital nomads who had no connection to teak but understood immediately what kind of place the Gymkhana was. They came for cricket and stayed for everything else.</p>
+
+        <h3>The Duck Lady and the Hill Tribe Fund</h3>
+        <p>One of the most beloved figures in the Gymkhana's modern history was Jenny Morgan, known to the cricketing world as the Duck Lady. The ritual was simple: any player dismissed for a duck (zero runs) was required to wear a small plastic duck on a ribbon around their neck for the rest of the day. The fine paid to receive the duck went to the Hill Tribe Fund, established in 2010 to support underprivileged hill tribe children with education, housing, and healthcare. Before her passing in late 2023, Jenny and her partner Terry Skillett helped raise millions of Thai Baht. The Duck tradition continues today, maintained by Susie and Jacki, now funding the Thailand Junior Cricket Development Fund.</p>
+
+        <h3>Star Power on the Pitch</h3>
+        <p>Over the decades, the Gymkhana pitch has hosted genuine cricketing legends: Mike Gatting, Dennis Lillee, Clive Rice, and Trevor Chappell among them. They came as players, not as celebrities. That is the spirit of the Sixes.</p>
+    </div>
+
+    <div class="image-grid cols-3">
+        <figure>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-1992-sixes-cricket-action.webp" alt="Chiang Mai Sixes cricket action, 1992" width="380" height="253" loading="lazy">
+            <figcaption>The Sixes in action, 1992</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-2018-sixes-cricket-action.webp" alt="Chiang Mai Sixes cricket action, 2018" width="380" height="253" loading="lazy">
+            <figcaption>Sixes action, 2018</figcaption>
+        </figure>
+        <figure>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-2026-sixes-cricket-trophy.webp" alt="Chiang Mai Cricket Sixes trophy, 2026" width="380" height="253" loading="lazy">
+            <figcaption>The Sixes trophy, 2026</figcaption>
+        </figure>
+    </div>
+
+    <div class="history-section" style="padding-top: 2rem;">
+        <h3>The Scoreboard Story: Three Kilometres on the Flood</h3>
+        <p>In 2024, a generous donation allowed the Sixes to acquire a new electronic scoreboard, planned for unveiling at the November tournament. Then came the floods. The Gymkhana grounds were submerged. When the water receded and the damage was assessed, the scoreboard was missing.</p>
+        <p>A few days later, Richard Lockwood overheard a phone call received by club staff. A woman living over three kilometres from the Gymkhana had found a large board with numbers on it in her garden. The floodwaters had carried it there.</p>
+        <p>The scoreboard was retrieved, transported to Bangkok, and restored to full operation by 121 Digital. It stood ready for the 2025 Sixes — physical proof that the Gymkhana endures.</p>
+
+        <div class="image-grid cols-2" style="padding: 0; margin-top: 2rem;">
+            <figure>
+                <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-2024-rocked-by-the-devastating-floods.webp" alt="Chiang Mai Gymkhana Club rocked by devastating floods, 2024" width="580" height="387" loading="lazy">
+                <figcaption>The 2024 floods at the Gymkhana</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-2025-the-cricket-field-restored.webp" alt="Cricket field restored at Gymkhana, 2025" width="580" height="387" loading="lazy">
+                <figcaption>The cricket field restored, 2025</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SECTION 7: THE CLUB TODAY -->
+<section id="today" class="today-section">
+    <div class="today-section-inner">
+        <div>
+            <p class="section-label">The Club Today</p>
+            <h2>Still Here. Still Playing.</h2>
+            <p>The Gymkhana Club has survived Japanese occupation, jungle reclamation, membership decline, and a scoreboard that travelled three kilometres on floodwater. In 2026, it is approaching its 128th year — with the 130th anniversary on the horizon.</p>
+            <p>Golf, tennis, cricket, squash, dining, weddings, and social events continue on the same 90 rai of land granted by a Prince and a King in 1898. The giant rain tree is still growing. The Honour Boards still list every President since the beginning. The Duck Lady's tradition still raises money for children who have never heard of teak.</p>
+            <p>Membership is open. The bar is open. The course is open. Come and play.</p>
+            <a href="about.html#contact" class="today-cta">Join or Visit the Club</a>
+        </div>
+        <div>
+            <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-2026-sixes-cricket-players.webp" alt="Cricket players at Chiang Mai Gymkhana Sixes, 2026" width="560" height="420" loading="lazy" style="width:100%;display:block;">
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="logo">
+                <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-club-logo-1898-transparent-72.webp" alt="Chiang Mai Gymkhana Club" style="height:32px;width:32px;object-fit:contain;">
+                <div class="logo-text">
+                    <span class="logo-name">CHIANG MAI GYMKHANA</span>
+                    <span class="logo-est">EST. 1898</span>
+                </div>
+            </div>
+            <p>349 Chiang Mai-Lamphun Road, Nong Hoi, Mueang, Chiang Mai 50000, Thailand</p>
+            <p style="margin-top:0.5rem;">Tel: 053 241 035</p>
+        </div>
+        <div class="footer-col">
+            <h4>Sport</h4>
+            <a href="golf.html">Golf</a>
+            <a href="tennis.html">Tennis</a>
+            <a href="cricket.html">Cricket</a>
+        </div>
+        <div class="footer-col">
+            <h4>Club</h4>
+            <a href="restaurant.html">Dining</a>
+            <a href="restaurant.html#events">Events</a>
+            <a href="about.html">About</a>
+            <a href="history.html">History</a>
+        </div>
+        <div class="footer-col">
+            <h4>Connect</h4>
+            <a href="about.html#contact">Contact Us</a>
+            <a href="about.html#membership">Membership</a>
+            <a href="https://m.me/chiangmai.gymkhana" target="_blank" rel="noopener">Facebook Messenger</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 Chiang Mai Gymkhana Club. Est. 1898.</span>
+        <span>349 Chiang Mai-Lamphun Road, Chiang Mai 50000</span>
+    </div>
+</footer>
+
+<script>
+    const header = document.getElementById('site-header');
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('main-nav');
+
+    window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    hamburger.addEventListener('click', () => nav.classList.toggle('open'));
+
+    // Lightbox
+    document.querySelectorAll('.image-grid img, .split-image img, .full-image').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+            const overlay = document.createElement('div');
+            overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:zoom-out;padding:2rem;';
+            const clone = document.createElement('img');
+            clone.src = img.src;
+            clone.alt = img.alt;
+            clone.style.cssText = 'max-width:90vw;max-height:90vh;object-fit:contain;';
+            overlay.appendChild(clone);
+            overlay.addEventListener('click', () => overlay.remove());
+            document.body.appendChild(overlay);
+        });
+    });
+</script>
+
+</body>
+</html>
