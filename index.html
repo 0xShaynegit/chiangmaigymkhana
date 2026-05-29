@@ -620,6 +620,118 @@
             font-size: 1.125rem;
         }
 
+        /* HISTORY STORIES SECTION */
+        .history-stories {
+            padding: 7rem 4rem;
+            background: #f2ede6;
+        }
+
+        .history-stories-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .history-stories-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 3.5rem;
+        }
+
+        .history-stories-header h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: #1a1a1a;
+            line-height: 1.1;
+        }
+
+        .history-stories-header a {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #2d5016;
+            text-decoration: none;
+            border-bottom: 1.5px solid #2d5016;
+            padding-bottom: 2px;
+            white-space: nowrap;
+            margin-left: 2rem;
+        }
+
+        .history-stories-header a:hover { opacity: 0.65; }
+
+        .history-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .history-card {
+            background: white;
+            overflow: hidden;
+            text-decoration: none;
+            display: block;
+            transition: transform 0.25s ease;
+        }
+
+        .history-card:hover { transform: translateY(-4px); }
+
+        .history-card-img {
+            width: 100%;
+            aspect-ratio: 3/2;
+            object-fit: cover;
+            display: block;
+        }
+
+        .history-card-body {
+            padding: 1.6rem 1.8rem 2rem;
+        }
+
+        .history-card-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #c9682f;
+            margin-bottom: 0.6rem;
+        }
+
+        .history-card-body h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            line-height: 1.25;
+            margin-bottom: 0.8rem;
+        }
+
+        .history-card-body p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .history-card-link {
+            display: inline-block;
+            margin-top: 1.2rem;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #2d5016;
+            border-bottom: 1.5px solid #2d5016;
+            padding-bottom: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .history-stories { padding: 5rem 1.5rem; }
+            .history-stories-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+            .history-stories-header a { margin-left: 0; }
+            .history-cards { grid-template-columns: 1fr; }
+        }
+
         /* REVEAL */
         .reveal {
             opacity: 0;
@@ -678,6 +790,7 @@
             <a href="pages/cricket.html">CRICKET</a>
             <a href="pages/restaurant.html">DINING</a>
             <a href="pages/about.html">ABOUT</a>
+            <a href="pages/history.html">HISTORY</a>
             <a href="https://m.me/chiangmai.gymkhana" class="nav-cta" target="_blank">CONTACT</a>
         </nav>
     </header>
@@ -836,6 +949,45 @@
             <div class="sixes-stat">
                 <div class="sixes-stat-number">4M+</div>
                 <div class="sixes-stat-label">Baht Raised for Charity</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTORY STORIES -->
+    <section class="history-stories reveal">
+        <div class="history-stories-inner">
+            <div class="history-stories-header">
+                <h2>Stories from the Club</h2>
+                <a href="pages/history.html">Full history</a>
+            </div>
+            <div class="history-cards">
+                <a href="pages/history.html#teak-wallahs" class="history-card">
+                    <img src="images/chiang-mai-gymkhana-chiangmaigymkhana-group-photo-of-teak-foresters-in-front-of-Chiang-Mai-Gymkhana-club-in-1901.webp" alt="Teak foresters at Chiang Mai Gymkhana Club, 1901" class="history-card-img" width="380" height="253" loading="lazy">
+                    <div class="history-card-body">
+                        <p class="history-card-label">1890 to 1910</p>
+                        <h3>The Teak Wallahs</h3>
+                        <p>The men who founded the Gymkhana spent nine months a year in deep jungle. The club was their halfway house. Their sanity. Their only concession to civilisation.</p>
+                        <span class="history-card-link">Read the story</span>
+                    </div>
+                </a>
+                <a href="pages/history.html#dark-years" class="history-card">
+                    <img src="images/chiang-mai-gymkhana-chiangmaigymkhana-Old-Gymkhana-Clubhouse-January-1-1938---credit-Oliver-Backhouse-and-Frans-Betgem.webp" alt="Old Gymkhana Clubhouse 1938" class="history-card-img" width="380" height="253" loading="lazy">
+                    <div class="history-card-body">
+                        <p class="history-card-label">1941 to 1946</p>
+                        <h3>The Dark Years</h3>
+                        <p>When Japan entered Thailand on December 8, 1941, the club fell silent. Members fled to Burma or were interned. The fairways were waist-high in jungle by 1946.</p>
+                        <span class="history-card-link">Read the story</span>
+                    </div>
+                </a>
+                <a href="pages/history.html#sixes" class="history-card">
+                    <img src="images/chiang-mai-gymkhana-chiangmaigymkhana-2026-sixes-cricket-players.webp" alt="Chiang Mai Cricket Sixes players 2026" class="history-card-img" width="380" height="253" loading="lazy">
+                    <div class="history-card-body">
+                        <p class="history-card-label">Since 1988</p>
+                        <h3>The Spirit of the Sixes</h3>
+                        <p>In 1988, cricket saved the Gymkhana from decline. The Chiang Mai International Cricket Sixes became the largest amateur cricket tournament in the world.</p>
+                        <span class="history-card-link">Read the story</span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
