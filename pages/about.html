@@ -617,8 +617,19 @@
             .cta-dark { padding: 6rem 2rem; }
         }
 
+                .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+        .hamburger span { width: 22px; height: 2px; background: white; transition: background 0.4s; display: block; }
+        header.scrolled .hamburger span { background: #1a1a1a; }
+
         @media (max-width: 768px) {
             nav { display: none; }
+            nav.open {
+                display: flex; flex-direction: column;
+                position: fixed; inset: 0; background: rgba(0,0,0,0.96);
+                justify-content: center; align-items: center; gap: 2rem; z-index: 999;
+            }
+            nav.open a { font-size: 1.4rem; color: white; }
+            .hamburger { display: flex; z-index: 1001; }
             .membership-grid { grid-template-columns: 1fr; }
             .footer-inner { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
             .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
@@ -634,7 +645,7 @@
                 <span class="logo-est">EST. 1898</span>
             </div>
         </div>
-        <nav>
+        <nav id="main-nav">
             <a href="../index.html">HOME</a>
             <a href="golf.html">GOLF</a>
             <a href="tennis.html">TENNIS</a>
@@ -644,6 +655,7 @@
             <a href="history.html">HISTORY</a>
             <a href="https://m.me/chiangmai.gymkhana" class="nav-cta" target="_blank">CONTACT</a>
         </nav>
+        <div class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></div>
     </header>
 
     <!-- HERO -->
@@ -890,6 +902,11 @@
                 }
             });
         }, { threshold: 0.4 }).observe(document.getElementById('stats-section'));
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('main-nav');
+    if (hamburger && mainNav) {
+        hamburger.addEventListener('click', () => mainNav.classList.toggle('open'));
+    }
     </script>
 </body>
 </html>
