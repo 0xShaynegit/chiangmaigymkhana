@@ -1,0 +1,33 @@
+# Chiang Mai Gymkhana Club
+
+> The oldest sports and social club in northern Thailand, founded April 5, 1898. Located at 349 Chiang Mai-Lamphun Road, Chiang Mai 50000, Thailand.
+
+## What We Are
+
+Chiang Mai Gymkhana Club is a historic members club established in 1898 by 14 founders representing the four Great Teak Companies operating in northern Thailand. The club was granted land by King Rama V and has operated continuously for over 125 years, surviving WWII Japanese occupation and the 2024 floods.
+
+Sports offered: Golf (9-hole course, oldest in northern Thailand), Cricket, Tennis, Squash.
+
+## Key Pages
+
+- [Home](https://chiangmaigymkhana.com/): Overview and club introduction
+- [History](https://chiangmaigymkhana.com/pages/history.html): Full club history from 1898 to present
+- [Golf](https://chiangmaigymkhana.com/pages/golf.html): 9-hole golf course, green fees, membership, driving range
+- [Cricket](https://chiangmaigymkhana.com/pages/cricket.html): Cricket club, Chiang Mai International Cricket Sixes, Dick Wood Trophy
+- [Tennis](https://chiangmaigymkhana.com/pages/tennis.html): Tennis courts, coaching, club championships
+- [Dining and Events](https://chiangmaigymkhana.com/pages/restaurant.html): Restaurant, weddings, private functions
+- [About](https://chiangmaigymkhana.com/pages/about.html): Club history, membership, facilities
+
+## Key Facts
+
+- Founded: April 5, 1898
+- Location: 349 Chiang Mai-Lamphun Road, Chiang Mai 50000, Thailand
+- Contact: +66-53-241-035
+- Oldest golf course in northern Thailand
+- Home of the Chiang Mai International Cricket Sixes (founded 1988, world's largest amateur cricket tournament)
+- Thailand's first squash court (built 1895-1898, teak construction)
+- Associated with the Adjacent Foreign Cemetery (same 1898 royal land grant)
+
+## Sitemap
+
+https://chiangmaigymkhana.com/sitemap.xml
