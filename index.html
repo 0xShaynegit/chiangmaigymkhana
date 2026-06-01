@@ -193,55 +193,6 @@
             color: #0f0d0a;
         }
 
-        .hero-scroll {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.5rem;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 0;
-            text-align: left;
-        }
-
-        .hero-scroll-label {
-            font-size: 0.72rem;
-            font-weight: 600;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            color: rgba(255,255,255,0.7);
-            transition: color 0.3s;
-        }
-
-        .hero-scroll-arrow {
-            width: 28px;
-            height: 28px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation: arrowBounce 1.8s ease-in-out infinite;
-        }
-
-        .hero-scroll-arrow svg {
-            width: 20px;
-            height: 20px;
-            stroke: rgba(255,255,255,0.6);
-            fill: none;
-            stroke-width: 1.5;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            transition: stroke 0.3s;
-        }
-
-        .hero-scroll:hover .hero-scroll-label { color: white; }
-        .hero-scroll:hover .hero-scroll-arrow svg { stroke: white; }
-
-        @keyframes arrowBounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(6px); }
-        }
-
         /* INTRO STATEMENT */
         .intro-statement {
             padding: 8rem 4rem;
@@ -900,15 +851,9 @@
                 <h1 class="hero-line-1">Chiang Mai Gymkhana</h1>
                 <div class="hero-lower">
                     <p class="hero-line-2">126 years of sport, history, and community</p>
-                    <p class="hero-line-3">Northern Thailand's most historic institution, alive on the same 90 rai of land since the reign of King Rama V.</p>
+                    <p class="hero-line-3">Northern Thailand's most historic institution, alive on the same 90 rai of land since the reign of King Rama V. Explore our story...</p>
                 </div>
             </div>
-            <button class="hero-scroll" id="hero-scroll" aria-label="Scroll down">
-                <span class="hero-scroll-label">Explore Our Story</span>
-                <span class="hero-scroll-arrow">
-                    <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                </span>
-            </button>
         </div>
     </section>
 
@@ -1202,12 +1147,6 @@
         hamburger.addEventListener('click', () => mainNav.classList.toggle('open'));
     }
 
-    const heroScroll = document.getElementById('hero-scroll');
-    if (heroScroll) {
-        heroScroll.addEventListener('click', () => {
-            document.querySelector('.intro-statement').scrollIntoView({ behavior: 'smooth' });
-        });
-    }
     </script>
 </body>
 </html>
