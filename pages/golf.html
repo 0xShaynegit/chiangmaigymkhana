@@ -29,13 +29,14 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        html { scroll-behavior: smooth; }
+        html { scroll-behavior: smooth; overflow-x: hidden; }
 
         body {
             font-family: 'Inter', -apple-system, sans-serif;
             color: #1a1a1a;
             background: #f2ede6;
             line-height: 1.5;
+            overflow-x: hidden;
             animation: pageFadeIn 0.6s ease forwards;
         }
 
@@ -69,6 +70,7 @@
             flex-direction: row;
             align-items: center;
             gap: 10px;
+            text-decoration: none;
         }
 
         .logo-text {
@@ -352,10 +354,10 @@
         }
 
         .footer-column h4 {
-            font-size: 1.275rem;
+            font-size: 0.65rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.12em;
+            letter-spacing: 0.16em;
             color: #555;
             margin-bottom: 1.5rem;
         }
@@ -364,7 +366,7 @@
             display: block;
             color: #888;
             text-decoration: none;
-            font-size: 1.25rem;
+            font-size: 0.9rem;
             margin-bottom: 0.9rem;
             transition: color 0.2s;
             font-weight: 400;
@@ -379,7 +381,7 @@
             justify-content: space-between;
             align-items: center;
             color: #444;
-            font-size: 1.125rem;
+            font-size: 0.8rem;
         }
 
         /* REVEAL */
@@ -418,6 +420,7 @@
             nav.open a { font-size: 1.4rem; color: white; }
             .hamburger { display: flex; z-index: 1001; }
             .footer-inner { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+            footer { padding: 3rem 1.5rem 2rem; }
             .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
         }
     </style>
@@ -514,7 +517,7 @@
             <p>The Chiang Mai Gymkhana Club golf course is a 9-hole parkland design that presents a fair challenge to golfers of all ability levels. Matured trees line the fairways, providing beauty and strategic challenge throughout the round. The course layout offers a wonderful balance between playability and championship-level competition.</p>
             <p>Each hole is thoughtfully designed to take advantage of the natural landscape while maintaining the high standards expected by our membership. Whether playing your first round or your hundredth, you will find the course engaging, fair, and memorable. The elevation changes and tree-lined fairways create an experience that rivals courses in far more prominent golf destinations.</p>
             <p>Our grounds crew maintains the course to the highest standards, ensuring that greens, fairways, and rough are always in excellent condition regardless of the season.</p>
-            <p>Golf has been played on this land since the club's founding in 1898, making the Gymkhana course the oldest in northern Thailand. The original layout was designed for simultaneous use with polo and cricket — which is why the routing is unlike any modern course you have played. The fairways were historically maintained by grazing cattle rather than machinery. The hazards include trees that have been growing here for over a century. <a href="history.html#architecture" style="color:#2d5016;font-weight:600;">Explore the course's history.</a></p>
+            <p>Golf has been played on this land since the club's founding in 1898, making the Gymkhana course the oldest in northern Thailand. The original layout was designed for simultaneous use with polo and cricket   which is why the routing is unlike any modern course you have played. The fairways were historically maintained by grazing cattle rather than machinery. The hazards include trees that have been growing here for over a century. <a href="history.html#architecture" style="color:#2d5016;font-weight:600;">Explore the course's history.</a></p>
         </div>
         <div class="story-image">
             <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-six-golfers-group-photo.webp" alt="Six golfers posing for a group photo on the Chiang Mai Gymkhana Club golf course" width="800" height="534" loading="lazy">
@@ -594,14 +597,14 @@
     </section>
 
     <!-- FAQ -->
-    <section style="background:#f2ede6; padding:60px 20px;">
+    <section style="background:#f2ede6; padding:7rem 4rem;">
         <div style="max-width:800px; margin:0 auto;">
             <h2 style="font-family:'Playfair Display',Georgia,serif; font-size:2rem; color:#1a1a1a; margin-bottom:40px;">Frequently Asked Questions</h2>
 
             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:32px; border-bottom:1px solid #d4c4a0; padding-bottom:32px;">
                 <h3 itemprop="name" style="font-size:1.1rem; font-weight:600; color:#1a1a1a; margin-bottom:12px;">Is Chiang Mai Gymkhana the oldest golf course in northern Thailand?</h3>
                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p itemprop="text" style="color:#4a4a4a; line-height:1.7;">Yes. Golf has been played at the Chiang Mai Gymkhana Club since the club's founding in 1898, making it the oldest golf course in northern Thailand. The 9-hole parkland layout was originally designed for simultaneous use with polo and cricket — a quirk of the grounds that still shapes the routing today. <a href="history.html#trivia" style="color:#2d5016;font-weight:600;">Read more unusual facts about the club.</a></p>
+                    <p itemprop="text" style="color:#4a4a4a; line-height:1.7;">Yes. Golf has been played at the Chiang Mai Gymkhana Club since the club's founding in 1898, making it the oldest golf course in northern Thailand. The 9-hole parkland layout was originally designed for simultaneous use with polo and cricket   a quirk of the grounds that still shapes the routing today. <a href="history.html#trivia" style="color:#2d5016;font-weight:600;">Read more unusual facts about the club.</a></p>
                 </div>
             </div>
 
@@ -632,7 +635,13 @@
     <footer>
         <div class="footer-inner">
             <div class="footer-column">
-                <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-club-logo-1898-transparent-128.webp" alt="Chiang Mai Gymkhana Club" style="height:64px;width:64px;object-fit:contain;margin-bottom:1rem;display:block;">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
+                    <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-club-logo-1898-transparent-128.webp" alt="Chiang Mai Gymkhana Club" style="height:48px;width:48px;object-fit:contain;flex-shrink:0;">
+                    <div>
+                        <div style="color:white;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;line-height:1.2;">CHIANG MAI GYMKHANA</div>
+                        <div style="color:#666;font-size:0.62rem;letter-spacing:0.18em;line-height:1;margin-top:4px;">EST. 1898</div>
+                    </div>
+                </div>
                 <p style="color:#666;font-size:0.85rem;line-height:1.7;">349 Chiang Mai - Lamphun Road<br>Nong Hoi, Chiang Mai 50000<br>Thailand</p>
             </div>
             <div class="footer-column">

@@ -29,13 +29,14 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        html { scroll-behavior: smooth; }
+        html { scroll-behavior: smooth; overflow-x: hidden; }
 
         body {
             font-family: 'Inter', -apple-system, sans-serif;
             color: #1a1a1a;
             background: #f2ede6;
             line-height: 1.5;
+            overflow-x: hidden;
             animation: pageFadeIn 0.6s ease forwards;
         }
 
@@ -69,6 +70,7 @@
             flex-direction: row;
             align-items: center;
             gap: 10px;
+            text-decoration: none;
         }
 
         .logo-text {
@@ -563,10 +565,10 @@
         }
 
         .footer-column h4 {
-            font-size: 1.275rem;
+            font-size: 0.65rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.12em;
+            letter-spacing: 0.16em;
             color: #555;
             margin-bottom: 1.5rem;
         }
@@ -575,7 +577,7 @@
             display: block;
             color: #888;
             text-decoration: none;
-            font-size: 1.25rem;
+            font-size: 0.9rem;
             margin-bottom: 0.9rem;
             transition: color 0.2s;
             font-weight: 400;
@@ -590,7 +592,7 @@
             justify-content: space-between;
             align-items: center;
             color: #444;
-            font-size: 1.125rem;
+            font-size: 0.8rem;
         }
 
         /* REVEAL */
@@ -640,6 +642,7 @@
             .hamburger { display: flex; z-index: 1001; }
             .membership-grid { grid-template-columns: 1fr; }
             .footer-inner { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+            footer { padding: 3rem 1.5rem 2rem; }
             .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
         }
     </style>
@@ -720,7 +723,7 @@
             <h2>The Founding</h2>
             <p>The founding was not a British imposition on a Thai landscape. It was a negotiation. The fourteen founders approached Chao Intawarorot Suriyavongse, the Prince of Chiang Mai, and asked for land. He could have refused. Instead, he granted 90 rai of flat ground near the Ping River, with the formal blessing of King Rama V. The deed was issued for the express purpose of "encouraging sport in Northern Siam." The Prince knew what he was doing: he was anchoring a cosmopolitan merchant class to his city, giving them a reason to stay and invest.</p>
             <p>In the same royal act, King Rama V granted 24 rai of adjacent land to the south as the <a href="history.html#cemetery" style="color:#2d5016;font-weight:600;">Chiang Mai Foreign Cemetery</a>, so that the men who came to play would also have a place to rest. The two institutions were born from a single act of royal generosity. Many of the names on the club's Honour Boards are the same names found on the headstones next door. The Gymkhana was never fully a foreign place. It was always Chiang Mai's.</p>
-            <p>The five founding organisations were the British Consulate, the Borneo Company Limited, the Bombay Burmah Trading Corporation, the Siam Forest Company, and the Louis T. Leonowens Company. Of the fourteen original signatories, only one held Thai nationality. But the Honour Boards inside the old teak clubhouse list every President since 1898 — a roll call of colonial and post-colonial Chiang Mai that reads like the city's own social history. <a href="history.html#founding" style="color:#2d5016;font-weight:600;">Read the full founding story.</a></p>
+            <p>The five founding organisations were the British Consulate, the Borneo Company Limited, the Bombay Burmah Trading Corporation, the Siam Forest Company, and the Louis T. Leonowens Company. Of the fourteen original signatories, only one held Thai nationality. But the Honour Boards inside the old teak clubhouse list every President since 1898   a roll call of colonial and post-colonial Chiang Mai that reads like the city's own social history. <a href="history.html#founding" style="color:#2d5016;font-weight:600;">Read the full founding story.</a></p>
         </div>
         <div class="story-image">
             <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-rain-tree-flags-clubhouse.webp" alt="Rain tree with flags and the Gymkhana clubhouse" width="800" height="700" loading="lazy">
@@ -732,8 +735,8 @@
         <div class="story-text">
             <span class="story-label">The Founders</span>
             <h2>The Halfway House</h2>
-            <p>In the late 1800s, Chiang Mai was a month-long boat journey from Bangkok. There were no roads, no electricity, no telegraph. The men who ran the teak trade — known as the Teak Wallahs — spent nine months of every year deep in the forest, living in bamboo huts, managing thousands of elephants, and fighting off malaria, tiger attacks, and what the colonial records quietly called "Jungle Madness." The Gymkhana Club was built to treat it.</p>
-            <p>When the monsoon rains made jungle work impossible, the Wallahs descended on Chiang Mai. They traded jungle boots for cricket whites. They settled business rivalries over billiards. They sat under the rain tree and remembered, briefly, that they were human beings. The club was not a luxury. It was the difference between holding together and coming apart. The most vivid of these men was Louis Leonowels — son of Anna Leonowels, tutor to King Mongkut's children. He was a polo obsessive who imported ponies from Burma and Australia, a prodigious character whose legacy is written in the timber and the turf of the Gymkhana, not in his mother's more famous story. <a href="history.html#teak-wallahs" style="color:#2d5016;font-weight:600;">The Teak Wallahs era in full.</a></p>
+            <p>In the late 1800s, Chiang Mai was a month-long boat journey from Bangkok. There were no roads, no electricity, no telegraph. The men who ran the teak trade   known as the Teak Wallahs   spent nine months of every year deep in the forest, living in bamboo huts, managing thousands of elephants, and fighting off malaria, tiger attacks, and what the colonial records quietly called "Jungle Madness." The Gymkhana Club was built to treat it.</p>
+            <p>When the monsoon rains made jungle work impossible, the Wallahs descended on Chiang Mai. They traded jungle boots for cricket whites. They settled business rivalries over billiards. They sat under the rain tree and remembered, briefly, that they were human beings. The club was not a luxury. It was the difference between holding together and coming apart. The most vivid of these men was Louis Leonowels   son of Anna Leonowels, tutor to King Mongkut's children. He was a polo obsessive who imported ponies from Burma and Australia, a prodigious character whose legacy is written in the timber and the turf of the Gymkhana, not in his mother's more famous story. <a href="history.html#teak-wallahs" style="color:#2d5016;font-weight:600;">The Teak Wallahs era in full.</a></p>
         </div>
         <div class="story-image">
             <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-man-standing-at-base-of-giant-tree.webp" alt="Man standing at the base of the giant rain tree at Chiang Mai Gymkhana" width="800" height="700" loading="lazy">
@@ -751,8 +754,8 @@
         <div class="story-text">
             <span class="story-label">Belonging</span>
             <h2>One Hundred Years of One Family</h2>
-            <p>W.A.R. Wood arrived in Thailand in 1896. He served as British Consul in Chiang Mai for sixteen years, learned the language, married a Thai woman, and became one of the most respected men in the north. His memoir, <em>Consul in Paradise</em>, remains the most honest account of colonial Chiang Mai ever written, and the Gymkhana runs through it like a thread. He died in Chiang Mai. He is buried in the <a href="history.html#cemetery" style="color:#2d5016;font-weight:600;">Foreign Cemetery next door</a> — a quiet pilgrimage site for members who know the history.</p>
-            <p>His son Dick followed him into the club and remained a member for decades, well into the 21st century. Between father and son, the Wood family represented over a century of unbroken membership at a single club. That is what the Gymkhana does to people. Somerset Maugham visited once and wrote about it brilliantly from the outside. Wood lived it for a lifetime and gave it to his son. The truest record of what membership here means is not in any book — it is in the <a href="history.html#architecture" style="color:#2d5016;font-weight:600;">Honour Boards on the clubhouse wall</a>, where the names accumulate year by year, and the continuity speaks for itself. <a href="history.html#teak-wallahs" style="color:#2d5016;font-weight:600;">Read the full literary legacy.</a></p>
+            <p>W.A.R. Wood arrived in Thailand in 1896. He served as British Consul in Chiang Mai for sixteen years, learned the language, married a Thai woman, and became one of the most respected men in the north. His memoir, <em>Consul in Paradise</em>, remains the most honest account of colonial Chiang Mai ever written, and the Gymkhana runs through it like a thread. He died in Chiang Mai. He is buried in the <a href="history.html#cemetery" style="color:#2d5016;font-weight:600;">Foreign Cemetery next door</a>   a quiet pilgrimage site for members who know the history.</p>
+            <p>His son Dick followed him into the club and remained a member for decades, well into the 21st century. Between father and son, the Wood family represented over a century of unbroken membership at a single club. That is what the Gymkhana does to people. Somerset Maugham visited once and wrote about it brilliantly from the outside. Wood lived it for a lifetime and gave it to his son. The truest record of what membership here means is not in any book   it is in the <a href="history.html#architecture" style="color:#2d5016;font-weight:600;">Honour Boards on the clubhouse wall</a>, where the names accumulate year by year, and the continuity speaks for itself. <a href="history.html#teak-wallahs" style="color:#2d5016;font-weight:600;">Read the full literary legacy.</a></p>
         </div>
         <div class="story-image">
             <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-historical-1900s-colonial-veranda-photo.webp" alt="Historical 1900s photograph of the colonial veranda at Chiang Mai Gymkhana Club" width="800" height="700" loading="lazy">
@@ -862,7 +865,13 @@
     <footer>
         <div class="footer-inner">
             <div class="footer-column">
-                <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-club-logo-1898-transparent-128.webp" alt="Chiang Mai Gymkhana Club" style="height:64px;width:64px;object-fit:contain;margin-bottom:1rem;display:block;">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.2rem;">
+                    <img src="../images/chiang-mai-gymkhana-chiangmaigymkhana-club-logo-1898-transparent-128.webp" alt="Chiang Mai Gymkhana Club" style="height:48px;width:48px;object-fit:contain;flex-shrink:0;">
+                    <div>
+                        <div style="color:white;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;line-height:1.2;">CHIANG MAI GYMKHANA</div>
+                        <div style="color:#666;font-size:0.62rem;letter-spacing:0.18em;line-height:1;margin-top:4px;">EST. 1898</div>
+                    </div>
+                </div>
                 <p style="color:#666;font-size:0.85rem;line-height:1.7;">349 Chiang Mai - Lamphun Road<br>Nong Hoi, Chiang Mai 50000<br>Thailand</p>
             </div>
             <div class="footer-column">
