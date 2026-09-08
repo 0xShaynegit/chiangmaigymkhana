@@ -69,3 +69,4 @@ _raw/
 *.bak
 *.backup
 *.old
+manifest.json
