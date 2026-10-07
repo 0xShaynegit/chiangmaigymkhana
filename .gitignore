@@ -70,3 +70,11 @@ _raw/
 *.backup
 *.old
 manifest.json
+
+# AI working files (never public)
+/.tokensave/
+/.claude/
+/handover*.md
+/HANDOVER*.md
+/.md/HANDOVER.md
+/CLAUDE.md
